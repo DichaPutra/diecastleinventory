@@ -12,7 +12,10 @@ class itemlist extends Model {
     public $incrementing = false;
     protected $fillable = [
         'iditemlist',
-        'namabarang'
+        'namabarang',
+        'hargabeli',
+        'hargarencana',
+        'jumlahstock'
     ];
 
     public static function getItemlist()
@@ -20,6 +23,20 @@ class itemlist extends Model {
         return self::get();
     }
 
+    public static function addItemlist($namabarang, $hargabeli, $hargarencana, $jumlah)
+    {
+        $itemlist = new itemlist();
+        $itemlist->namabarang = $namabarang;
+        $itemlist->hargabeli = $hargabeli;
+        $itemlist->hargarencana = $hargarencana;
+        $itemlist->jumlahstock = $jumlah;
+        $itemlist->save();
+    }
 
+    public static function getLatestID()
+    {
+
+        return self::latest('iditemlist')->first()->iditemlist;
+    }
 
 }

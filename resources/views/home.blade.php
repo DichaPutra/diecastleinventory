@@ -20,6 +20,12 @@ Diecastle Store Inventory
                 <div class="row">
                     <div class="col-6">
                         <div class="card mt-3 tab-card">
+                            @if(session()->has('message'))
+                            <div class="alert alert-success" id="success-alert">
+                                {{ session()->get('message') }}
+                            </div>
+                            @endif
+
                             <div class="card-header tab-card-header">
                                 <ul class="nav nav-tabs card-header-tabs" id="myTab" role="tablist">
                                     <li class="nav-item">
@@ -174,6 +180,11 @@ Diecastle Store Inventory
             "bLengthChange": false,
             "lengthChange": false
         });
+    });
+
+
+    $("#success-alert").fadeTo(2000, 500).slideUp(500, function () {
+        $("#success-alert").slideUp(500);
     });
 </script>
 
