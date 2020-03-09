@@ -5,6 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\DB;
 
+
 class itemlist extends Model {
 
     protected $table = 'itemlist';
@@ -37,6 +38,14 @@ class itemlist extends Model {
     {
 
         return self::latest('iditemlist')->first()->iditemlist;
+    }
+
+    public static function updateJumlahStock($iditemlist,$penambahan)
+    {
+        $jumlahsebelum = self::where('iditemlist',$iditemlist)->first()->jumlahstock;
+        $jumlahupdated = $jumlahsebelum + $penambahan;
+        self::where('iditemlist',$iditemlist)->update(['jumlahstock' => $jumlahupdated]); 
+        return ;
     }
 
 }

@@ -9,8 +9,9 @@
         <!-- styles -->
         <link href="{{asset('public/css/styles.css')}}" rel="stylesheet">
 
+        
         @yield('head')
-       
+
     </head>
     <body>
         <div class="header">
@@ -40,16 +41,6 @@
         <script src="{{asset('public/vendors/datatables/dataTables.bootstrap.js')}}"></script>
         <script src="{{asset('public/js/custom.js')}}"></script>
         <script src="{{asset('public/js/tables.js')}}"></script>
-
-        <!--         jQuery UI 
-                <script src="https://code.jquery.com/ui/1.10.3/jquery-ui.js"></script>
-        
-                 jQuery (necessary for Bootstrap's JavaScript plugins) 
-                <script src="https://code.jquery.com/jquery.js"></script>
-                 Include all compiled plugins (below), or include individual files as needed 
-                <script src="{{asset('public/bootstrap/js/bootstrap.min.js')}}"></script>
-                <script src="{{asset('public/js/custom.js')}}"></script>
-                <script src="{{asset('public/js/tables.js')}}"></script>-->
 
         @yield('script')
     </body>

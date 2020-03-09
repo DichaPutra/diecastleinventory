@@ -26,9 +26,23 @@ class home extends Controller {
 
         itemlist::addItemlist($namabarang, $hargabeli, $hargajual, $jumlah);
         $lastid = itemlist::getLatestID();
-        transaksimasuk::addItemlist($lastid,$hargabeli, $hargajual, $jumlah);
+        transaksimasuk::addItemlist($lastid, $hargabeli, $hargajual, $jumlah);
 
         $msg = 'Data Item baru telah ditambahkan (new entry)';
+        return redirect()->route('home')->with('message', $msg)->withInput();
+    }
+
+    public function penambahan(Request $request)
+    {
+        $iditemlist = $request->iditemlist;
+        $hargabeli = $request->hargabeli;
+        $hargajual = $request->hargajual;
+        $jumlah = $request->jumlah;
+
+        itemlist::updateJumlahStock($iditemlist, $jumlah);
+        transaksimasuk::addItemlist($iditemlist, $hargabeli, $hargajual, $jumlah);
+
+        $msg = 'Data Item ditambahkan (penambahan)';
         return redirect()->route('home')->with('message', $msg)->withInput();
     }
 
