@@ -16,5 +16,6 @@
 Route::get('/','home@index')->name('home');
 Route::post('/postitemlist', 'home@postitemlist')->name('postItemList');
 Route::post('/penambahan','home@penambahan')->name('penambahan');
+Route::post('/penjualan','home@penjualan')->name('penjualan');
 //Route::get('/show','home@show')->name('show');
 

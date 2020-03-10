@@ -31,7 +31,7 @@ class transaksimasuk extends Model {
                                 GROUP BY iditemlist');
     }
 
-    public static function addItemlist($parentid, $hargabeli, $hargarencana, $jumlah)
+    public static function addTransaksiMasuk($parentid, $hargabeli, $hargarencana, $jumlah)
     {
         $itemlist = new transaksimasuk();
         $itemlist->iditemlist = $parentid;
