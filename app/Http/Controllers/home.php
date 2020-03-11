@@ -41,6 +41,7 @@ class home extends Controller {
         $jumlah = $request->jumlah;
 
         itemlist::updateJumlahStockAdd($iditemlist, $jumlah);
+        itemlist::updateHargaTerakhir($iditemlist, $hargabeli,$hargajual);
         transaksimasuk::addTransaksiMasuk($iditemlist, $hargabeli, $hargajual, $jumlah);
 
         $msg = 'Data Item ditambahkan (penambahan)';

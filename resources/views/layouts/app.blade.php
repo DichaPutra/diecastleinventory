@@ -9,23 +9,23 @@
         <!-- styles -->
         <link href="{{asset('public/css/styles.css')}}" rel="stylesheet">
 
-        
-        @yield('head')
-
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
     </head>
-    <body>
+
+    <body>     
         <div class="header">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
                         <!-- Logo -->
                         <div class="logo">
-                            <h1><a href="index.html">DiecastleStore Inventory</a></h1>
+                            <h1><a href="#">Diecastlestore Inventory</a></h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
+
         <div class="page-content">
             @yield('content')
         </div>

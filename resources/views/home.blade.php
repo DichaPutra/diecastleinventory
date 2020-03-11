@@ -5,8 +5,7 @@ Diecastle Store Inventory
 @endsection
 
 @section('head')
-<link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet">
-<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.6.3/css/bootstrap-select.min.css" />
+
 @endsection
 
 @section('content')
@@ -32,13 +31,13 @@ Diecastle Store Inventory
                     @endif
 
                     <!-- Button trigger modal -->
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#newentry">
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#newentry">
                         New Entry
                     </button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#penambahan">
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#penambahan">
                         Penambahan
                     </button>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#penjualan">
+                    <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#penjualan">
                         Penjualan
                     </button><br><br><br>
 
