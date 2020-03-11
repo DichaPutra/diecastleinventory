@@ -65,7 +65,7 @@ class itemlist extends Model {
 
     public static function updateHargaTerakhir($iditemlist, $hargabeli,$hargajual)
     {
-        self::where('iditemlist', $iditemlist)->update(['hargabeli' => $hargabeli,'hargajual' => $hargajual]);
+        self::where('iditemlist', $iditemlist)->update(['hargabeli' => $hargabeli,'hargarencana' => $hargajual]);
     }
 
 }
