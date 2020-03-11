@@ -32,13 +32,13 @@ Diecastle Store Inventory
 
                     <!-- Button trigger modal -->
                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#newentry">
-                        New Entry
+                        New
                     </button>
                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#penambahan">
-                        Penambahan
+                        +
                     </button>
                     <button type="button" class="btn btn-primary btn-sm" data-toggle="modal" data-target="#penjualan">
-                        Penjualan
+                        $
                     </button><br><br><br>
 
                     <table class="table table-striped table-bordered" id="itemlist" name="itemlist">
