@@ -61,6 +61,7 @@ Diecastle Store Inventory
                             @endforeach
                         </tbody>
                     </table>
+                    Check Out DiecastleStore <a href="https://tokopedia.link/50EPTSE0K4">@Tokopedia</a> | <a href="https://www.instagram.com/diecastle_store/">@Instagram</a>  
                 </div>
             </div>    
         </div>      
