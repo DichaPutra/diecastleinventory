@@ -27,7 +27,7 @@ class home extends Controller {
 
         itemlist::addItemlist($namabarang, $hargabeli, $hargajual, $jumlah);
         $lastid = itemlist::getLatestID();
-        transaksimasuk::addItemlist($lastid, $hargabeli, $hargajual, $jumlah);
+        transaksimasuk::addTransaksiMasuk($lastid, $hargabeli, $hargajual, $jumlah);
 
         $msg = 'Data Item baru telah ditambahkan (new entry)';
         return redirect()->route('home')->with('message', $msg)->withInput();
