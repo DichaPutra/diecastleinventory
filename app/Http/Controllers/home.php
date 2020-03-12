@@ -22,7 +22,7 @@ class home extends Controller {
     {
         $namabarang = $request->namabarang;
         $hargabeli = $request->hargabeli;
-        $hargajual = $request->hargabeli;
+        $hargajual = $request->hargajual;
         $jumlah = $request->jumlah;
 
         itemlist::addItemlist($namabarang, $hargabeli, $hargajual, $jumlah);
